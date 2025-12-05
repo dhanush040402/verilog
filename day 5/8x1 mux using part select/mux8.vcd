@@ -1,0 +1,58 @@
+$date
+	Fri Dec  5 18:06:53 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux8_tb $end
+$var wire 1 ! y $end
+$var reg 8 " data [7:0] $end
+$var reg 3 # select [2:0] $end
+$scope module dut $end
+$var wire 8 $ data [7:0] $end
+$var wire 3 % select [2:0] $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 %
+b10110110 $
+b0 #
+b10110110 "
+0!
+$end
+#10
+1!
+b1 #
+b1 %
+#20
+b10 #
+b10 %
+#30
+0!
+b11 #
+b11 %
+#40
+1!
+b100 #
+b100 %
+#50
+b101 #
+b101 %
+#60
+0!
+b110 #
+b110 %
+#70
+1!
+b111 #
+b111 %
+#80
