@@ -1,0 +1,46 @@
+$date
+	Mon Dec  8 14:37:39 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module odd_even_tb $end
+$var wire 1 ! odd $end
+$var wire 1 " even $end
+$var reg 8 # num [7:0] $end
+$scope module dut $end
+$var wire 8 $ num [7:0] $end
+$var reg 1 " even $end
+$var reg 1 ! odd $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b0 #
+1"
+0!
+$end
+#1
+0"
+1!
+b101 #
+b101 $
+#2
+0!
+1"
+b1011000 #
+b1011000 $
+#3
+0"
+1!
+b11111111 #
+b11111111 $
+#4
