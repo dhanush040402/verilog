@@ -1,0 +1,81 @@
+$date
+	Mon Dec 15 18:40:32 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module pipo_tb $end
+$var wire 4 ! po [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # load $end
+$var reg 4 $ pi [3:0] $end
+$var reg 1 % rst $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # load $end
+$var wire 4 & pi [3:0] $end
+$var wire 1 % rst $end
+$var reg 4 ' po [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx '
+b0 &
+1%
+b0 $
+0#
+0"
+bx !
+$end
+#5
+b0 !
+b0 '
+1"
+#10
+0"
+b1010 $
+b1010 &
+1#
+0%
+#15
+b1010 !
+b1010 '
+1"
+#20
+0"
+#25
+1"
+#30
+0"
+b101 $
+b101 &
+0#
+#35
+1"
+#40
+0"
+#45
+1"
+#50
+0"
+b1111 $
+b1111 &
+1#
+#55
+b1111 !
+b1111 '
+1"
+#60
+0"
+#65
+1"
+#70
+0"
