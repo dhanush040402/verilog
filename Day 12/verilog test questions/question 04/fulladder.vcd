@@ -1,0 +1,104 @@
+$date
+	Mon Dec 29 15:03:19 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_nbit_full_adder $end
+$var wire 8 ! Sum [7:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 # N $end
+$var reg 8 $ A [7:0] $end
+$var reg 8 % B [7:0] $end
+$var reg 1 & Cin $end
+$scope module dut $end
+$var wire 8 ' A [7:0] $end
+$var wire 8 ( B [7:0] $end
+$var wire 1 & Cin $end
+$var wire 9 ) carry [8:0] $end
+$var wire 8 * Sum [7:0] $end
+$var wire 1 " Cout $end
+$var parameter 32 + N $end
+$scope begin FA[0] $end
+$var parameter 2 , i $end
+$upscope $end
+$scope begin FA[1] $end
+$var parameter 2 - i $end
+$upscope $end
+$scope begin FA[2] $end
+$var parameter 3 . i $end
+$upscope $end
+$scope begin FA[3] $end
+$var parameter 3 / i $end
+$upscope $end
+$scope begin FA[4] $end
+$var parameter 4 0 i $end
+$upscope $end
+$scope begin FA[5] $end
+$var parameter 4 1 i $end
+$upscope $end
+$scope begin FA[6] $end
+$var parameter 4 2 i $end
+$upscope $end
+$scope begin FA[7] $end
+$var parameter 4 3 i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b111 3
+b110 2
+b101 1
+b100 0
+b11 /
+b10 .
+b1 -
+b0 ,
+b1000 +
+b1000 #
+$end
+#0
+$dumpvars
+b11110 *
+b0 )
+b10100 (
+b1010 '
+0&
+b10100 %
+b1010 $
+0"
+b11110 !
+$end
+#5
+b11001000 )
+b10011011 !
+b10011011 *
+b110111 %
+b110111 (
+b1100100 $
+b1100100 '
+#10
+1"
+b111111110 )
+b0 !
+b0 *
+b1 %
+b1 (
+b11111111 $
+b11111111 '
+#15
+0"
+b11111011 !
+b11111011 *
+b1 )
+1&
+b110010 %
+b110010 (
+b11001000 $
+b11001000 '
+#30

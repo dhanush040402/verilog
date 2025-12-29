@@ -1,0 +1,41 @@
+`timescale 1ns/1ps
+
+module tb_clk_100hz;
+
+    reg clk_50mhz;
+    reg rst;
+    wire clk_100hz;
+
+    // Instantiate DUT
+    clk_100hz dut (
+        .clk_50mhz(clk_50mhz),
+        .rst(rst),
+        .clk_100hz(clk_100hz)
+    );
+
+    // 50 MHz clock generation (20 ns period)
+    always #10 clk_50mhz = ~clk_50mhz;
+
+    initial begin
+        // Initialize
+        clk_50mhz = 0;
+        rst       = 1;
+
+        // Hold reset for a few cycles
+        #100;
+        rst = 0;
+
+        // Run simulation long enough to see toggles
+        // 100 Hz period = 10 ms
+        #50_000_000;   // 50 ms
+
+        $finish;
+    end
+
+    // Monitor output clock
+    initial begin
+        $monitor("Time = %0t ns | clk_100hz = %b", $time, clk_100hz);
+    end
+
+endmodule
+
