@@ -1,3 +1,4 @@
+//enter even values for parameter
 module clk_even #(parameter N = 4)(
 input clk,rst,
 output reg clk_out);
