@@ -1,3 +1,4 @@
+//enter even number for parameter
 module clk_even_tb;
 parameter N=3;
 reg clk,rst;
