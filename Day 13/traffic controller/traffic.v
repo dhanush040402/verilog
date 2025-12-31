@@ -7,7 +7,7 @@ module traffic(
     output reg n_l,n_r,n_s
 );
 
-    // State encoding
+    
     parameter [2:0]
         s0 = 3'd0,
         s1 = 3'd1,
