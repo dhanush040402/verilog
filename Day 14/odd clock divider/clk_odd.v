@@ -1,5 +1,5 @@
 module clk_odd  #(
-    parameter integer N = 5   // MUST be odd
+    parameter integer N = 5   // Enter only odd
 )(
     input  wire clk,
     input  wire rst,
