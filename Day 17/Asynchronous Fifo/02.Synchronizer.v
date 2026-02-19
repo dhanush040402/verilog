@@ -1,6 +1,8 @@
+`timescale 1ns/1ps
+
 module synchronizer #(parameter width = 3)(
   input clk,rst,[width:0]gin,
-  output reg gout
+  output reg [width:0]gout
 );
   
   reg [width:0]q;
