@@ -1,17 +1,20 @@
+`timescale 1ns/1ps
+
 `include "synchronizer.sv"
 `include "write_point_handler.sv"
 `include "read_point_handler.sv"
 `include "Fifo_memory.sv"
 
 module asynchronous_fifo #(parameter depth = 8 , data_width = 8 ) (
-  input wclk,wrst,w_en,rclk,rrst,r_en,full,empty,
+  input wclk,wrst,w_en,rclk,rrst,r_en,
   input [data_width-1:0]data_in,
-  output reg[data_width-1:0]data_out
+  output full,empty,
+  output [data_width-1:0]data_out
 );
   parameter ptr_width = $clog2(depth);
   
-  reg[ptr_width:0]b_wptr,b_rptr,g_wptr,g_rptr,b_wptr_sync,b_rptr_sync;
-  wire[ptr_width-1:0]waddr,raddr;
+  wire [ptr_width:0]b_wptr,b_rptr,g_wptr,g_rptr,g_wptr_sync,g_rptr_sync;
+  
   
   synchronizer #(ptr_width) sync_wptr(
     .clk(rclk),
@@ -38,8 +41,8 @@ module asynchronous_fifo #(parameter depth = 8 , data_width = 8 ) (
   );
   
   rptr_handler #(ptr_width) read_h(
-    .rclk(rclk),    .rrst(rrst),
-
+    .rclk(rclk),    
+    .rrst(rrst),
     .r_en(r_en),
     .g_wptr_sync(g_wptr_sync),
     .b_rptr(b_rptr),
