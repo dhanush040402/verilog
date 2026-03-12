@@ -1,3 +1,4 @@
+//memory 
 `timescale 1ns/1ps
 
 module fifo_memory #(parameter depth=8, data_width=8 , ptr_width=3)(
