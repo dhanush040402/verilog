@@ -1,3 +1,4 @@
+//write handler
 `timescale 1ns/1ps
 
 module wptr_handler #(parameter ptr_width = 3)(
