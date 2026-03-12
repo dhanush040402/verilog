@@ -1,3 +1,4 @@
+//design
 `timescale 1ns/1ps
 
 `include "synchronizer.sv"
