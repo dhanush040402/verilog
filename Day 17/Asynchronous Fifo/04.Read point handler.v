@@ -1,3 +1,4 @@
+//read handler
 `timescale 1ns/1ps
 
 module rptr_handler #(parameter ptr_width = 3)(
