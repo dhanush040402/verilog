@@ -1,3 +1,4 @@
+//synchroniser
 `timescale 1ns/1ps
 
 module synchronizer #(parameter width = 3)(
