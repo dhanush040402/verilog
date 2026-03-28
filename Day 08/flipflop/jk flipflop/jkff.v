@@ -1,3 +1,4 @@
+//jff
 module jkff(
 input j,k,clk,
 output reg q
