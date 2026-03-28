@@ -1,3 +1,4 @@
+//dff
 module dff(
 input rst,en,d,clk,
 output reg q
