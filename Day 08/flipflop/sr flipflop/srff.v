@@ -1,3 +1,4 @@
+//srff
 module srff(
 input s,r,clk,
 output reg q
