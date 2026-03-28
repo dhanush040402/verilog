@@ -1,3 +1,4 @@
+//jkff conversion
 module sr_ff (
     input  wire clk,
     input  wire rst,
