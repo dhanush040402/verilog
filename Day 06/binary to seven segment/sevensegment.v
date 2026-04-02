@@ -1,3 +1,4 @@
+//sevensegment 
 module sevensegment(
     input  [3:0] bin,
     output reg [6:0] seg
